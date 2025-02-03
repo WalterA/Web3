@@ -1,0 +1,21 @@
+body {
+    background-color: aquamarine;
+    margin: 0px;
+
+}
+.set{
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+div {
+    margin: 0 auto;
+    width: 52.4%;
+    background-color: aliceblue;
+}
+.no-margin {
+    margin: 0;
+    
+}
+h1{font-size: 23px;
+background-color: gray;}
