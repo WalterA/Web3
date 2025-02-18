@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/* il tag CSS può essere messo solo nell'head*/
+        /* tag style abilita la scrittura CSS ... */
+        .miostile {
+            color : green
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="miostile" id="cambio">Prima Pagina html con DOM</h1>
+    <div class="miostile" id="cambio2">Import del DOM ? NO ... il DOM sta nel browser ... </div>
+    <div class="miostile">PER UTILIZZARE IL DOM HO BISOGNO DI UN LINGUAGGIO DI PROGRAMMAZIONE </div>
+    <h2>document</h2>
+    <h3>document ci sono dei metodi ... ne vediamo uno ... getElementById()</h3>
+    <img style="width : 100px; border : 5px solid black" id="miaimg" src="https://previews.123rf.com/images/siamimages/siamimages1702/siamimages170202731/72668468-icona-pi%C3%B9-illustrazione-vettoriale.jpg">
+
+    <button onclick="test()">CLICCA QUI</button>
+
+    <script> 
+        var x = 10; // js non esisto i tipi 
+
+        // può essere messo nell'head e nel body
+        // tag script abilita la scrittura javascript
+        // QUI POSSO USARE IL DOM
+
+        // funzione javascript
+        // scrivere un blocco senza eseguirlo
+        function test() {
+            // document.element
+            document.title = "La mia prima pagina";
+            var miotag = document.getElementById("miaimg");
+
+            // attributo
+            miotag.setAttribute("alt","testo alternativo dell'immagine");
+
+            // evento
+            miotag.onclick = () => { alert('ciao') };
+
+            // style
+            miotag.style.border = "solid 5px red";
+            miotag.style.width = "500px";
+
+            var miotagtitolo = document.getElementById("cambio2");
+            miotagtitolo.style.fontWeight = "900";
+        }
+    </script>
+</body>
+</html>

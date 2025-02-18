@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio</title>
+</head>
+<body>
+    <p id = "p" onmouseleave="cambiaContenuto()">Questo è un paragrafo</p>
+    <ul id="l">   
+    </ul>
+    <div>
+    <img id="im" style="width : 100px" src="https://previews.123rf.com/images/siamimages/siamimages1702/siamimages170202731/72668468-icona-pi%C3%B9-illustrazione-vettoriale.jpg">
+    </div>
+    <div>
+    <button onclick="cambioParagrafo()">Cambio del paragrafo</button>
+    <input  type="text" id="inputTesto" placeholder="Inserisci un elemento" />
+    <button onclick="nascondiParagrafo()">Nascondi paragrafo</button>
+</div>
+    <div>
+    <button onclick="aggiungiElemento()">Aggingi in lista</button>
+    <button onclick="eliminaprimoelemento()">Elimina primo elemento</button>
+    </div>
+   
+    <button onclick="cambiaColore()">Cambia colore</button>
+    <button onclick="cambiaset()">Cambia immagine</button>
+    <button onclick="contaElementi()">Conta elementi</button>
+    
+    <table>
+        <tr>
+            <td >Nome</td> 
+            <td >Cognome</td>
+        </tr>
+        <tr>
+            <td id="nome">Luca</td> 
+            <td id="cognome">Rossi</td>
+        </tr>
+        
+        <tr>
+            <td ><button onclick="cambiaNome()">Cambia nome</button></td>
+            <tr><td> <input  type="text" id="inputnome" placeholder="Inserisci nome" /></td></tr>
+            <td><button onclick="cambiaCognome()">Cambia cognome</button></td>
+            <tr><td> <input  type="text" id="inputcognome" placeholder="Inserisci cognome" /></td></tr>
+        </tr>
+    </table>
+
+    <script> 
+        var miotag = document.getElementById("im");
+        miotag.onmouseover = () => { alert('ciao') };
+        function cambioParagrafo() {
+            
+            
+            var miotag = document.getElementById("p");
+
+                        miotag.innerHTML = "Paragrafo cambiato";
+        }
+        function aggiungiElemento() {
+            var miotag = document.getElementById("l");
+            var contenuto = document.getElementById("inputTesto");
+            var tag = document.createElement("li");
+            tag.innerHTML = contenuto.value;
+            miotag.appendChild(tag);
+        }
+        function nascondiParagrafo() {
+            var miotag = document.getElementById("p");
+            miotag.style.display = "none";
+        }
+        function cambiaColore() {
+            var miotag = document.getElementById("p");
+            var coloreCasuale = '#' + Math.floor(Math.random()*16777215).toString(16); 
+            miotag.style.color = coloreCasuale;
+     
+        }
+        function cambiaset(){
+            var miotag = document.getElementById("im");
+            miotag.setAttribute("src","https://www.zeusnews.it/img/4/8/1/6/2/0/026184-620-google-vedi-immagini.jpg");
+        }
+        function cambiaNome(){
+            var miotag = document.getElementById("nome");
+            var contenuto = document.getElementById("inputnome").value;
+            miotag.innerHTML = contenuto;
+        }
+        function cambiaCognome(){
+            var miotag = document.getElementById("cognome");
+            var contenuto = document.getElementById("inputcognome").value;
+            miotag.innerHTML = contenuto;
+        }
+        function eliminaprimoelemento(){
+            var miotag = document.getElementById("l");
+            miotag.removeChild(miotag.firstChild);
+        }
+        function contaElementi(){
+            var miotag = document.getElementById("l");
+            alert(miotag.childElementCount);
+        }
+        
+        function cambiaContenuto() {
+            var miotag = document.getElementById("p");
+            miotag.innerHTML = "Hai passato il mouse sopra di me!";
+        }
+    </script>
+</body>
+</html>

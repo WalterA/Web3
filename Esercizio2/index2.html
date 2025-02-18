@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Esercizio2</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; }
+        img { max-width: 100%; height: auto; display: block; margin: auto; }
+        .nav { text-align: center; background-color: white; }
+        .nav a { margin: 0 10px; text-decoration: none; color: black; }
+        .content-container { background-color: white; }
+
+        @media (max-width: 600px) {
+            .content-container { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img src="img/top.jpg" alt="Top Image"></td>
+        </tr>
+        <tr>
+            <td class="nav">| <a href="">Home</a> | <a href="">La nostra azienda</a> | <a href="">Prodotti</a> | <a href="">I servizi</a> | <a href="">Contatti</a> |</td>
+        </tr>
+        <tr>
+            <td class="content-container">
+                <table>
+                    <tr>
+                        <td valign="top">
+                            <table>
+                                <tr><td><a href=""><img src="img/registrati-ora.jpg" alt="Registrati Ora"></a></td></tr>
+                                <tr><td><a href=""><img src="img/login.jpg" alt="Login"></a></td></tr>
+                                <tr><td><a href=""><img src="img/catalogo.jpg" alt="Catalogo"></a></td></tr>
+                            </table>
+                        </td>
+                        <td valign="top">
+                            <table>
+                                <tr><td>Contenuto testuale che si adatta alla dimensione dell'immagine superiore.</td></tr>
+                                <tr><td><table><tr><td><a href=""><img src="img/libro1.jpg" alt="Libro 1"></a></td><td>Autore<br>Scrittore</td></tr></table></td></tr>
+                                <tr><td><table><tr><td><a href=""><img src="img/libro2.jpg" alt="Libro 2"></a></td><td>Autore<br>Scrittore</td></tr></table></td></tr>
+                                <tr><td><table><tr><td><a href=""><img src="img/libro3.jpg" alt="Libro 3"></a></td><td>Autore<br>Scrittore</td></tr></table></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
