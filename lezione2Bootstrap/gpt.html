@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo Edit Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Edit Service</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">La Nostra Azienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Prodotti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Servizi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Carrello</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contatti</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <div class="row">
+            <!-- Sidebar Login e Catalogo -->
+            <aside class="col-md-3">
+                <div class="card p-3 mb-3">
+                    <h5 class="text-center text-success">REGISTRATI ORA!</h5>
+                    <form>
+                        <div class="mb-2">
+                            <input type="email" class="form-control" placeholder="User / Email">
+                        </div>
+                        <div class="mb-2">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <button class="btn btn-primary w-100">Accedi</button>
+                    </form>
+                </div>
+                <div class="card p-3">
+                    <h5>Catalogo</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Contabilità e Bilancio</li>
+                        <li class="list-group-item">Enti Locali e P.A.</li>
+                        <li class="list-group-item">Giurisprudenza e Diritto</li>
+                        <li class="list-group-item">Fiscale</li>
+                        <li class="list-group-item">Immobiliare e Condominio</li>
+                    </ul>
+                </div>
+            </aside>
+            
+            <!-- Contenuto Principale -->
+            <main class="col-md-9">
+                <h4 class="mb-3">I nostri prodotti</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Le frodi carosello</h5>
+                                <p class="card-text">Categoria: Fiscale</p>
+                                <p class="card-text">Prezzo: €22,00</p>
+                                <a href="#" class="btn btn-success btn-sm">Maggiori informazioni</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">La cartella di pagamento</h5>
+                                <p class="card-text">Categoria: Fiscale</p>
+                                <p class="card-text">Prezzo: €54,00</p>
+                                <a href="#" class="btn btn-success btn-sm">Maggiori informazioni</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Azienda agricola e fisco</h5>
+                                <p class="card-text">Categoria: Fiscale</p>
+                                <p class="card-text">Prezzo: €42,00</p>
+                                <a href="#" class="btn btn-success btn-sm">Maggiori informazioni</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
