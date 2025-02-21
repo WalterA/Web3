@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio</title>
+    <script>
+        let nome1 = () =>{
+            let nome = "Walter";
+            document.write("Ciao " + nome);
+        }
+    </script>
+</head>
+<body>
+    <div class="row">
+        < class="col-auto">
+         <p><h1>
+            Esercizio 1.1 
+            </h1><br>   
+            <h2>
+                Si scriva un programma in un file javascript con il
+                nome esercizio1_1.js JavaScript che definisce una
+                variabile nome che ha come valore il proprio nome
+                (es.Mario).
+                Il programma deve stampare in output la stringa
+                Ciao Mario, utilizzando la variabile definita e
+                l’operatore di concatenazione. Eseguire l’esercizio
+                nelle due modalità : lato client e lato server.
+        </p></h2>
+        <p ><h1 id="nome"></h1></p>
+                <script>
+                    let nome = "Walter";
+                    console.log("ciao" + nome);
+                    document.getElementById("nome").innerHTML = "Ciao " + nome;
+                </script>
+                
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-auto">
+            <p> <h1>
+                Esercizio 1.2
+                </h1>
+                <h2>
+                Lato client : creare una pagina html contenente uno
+                script che dichiara una variabile numerica,
+                assegnandole il valore iniziale di 100. Stampare a
+                video il valore della variabile all’interno di un
+                paragrafo della pagina. Successivamente cambiare
+                valore alla variabile (valore = 70) e stampare
+                nuovamente all’interno di un paragrafo il nuovo
+                valore. Lato server : eseguire l’esercizio sulla
+                console.
+                </h2>
+            </p>
+        </div>
+        <div class="col-auto">
+           <p id="primo valore"></p>
+           <p id="secondo valore"></p>
+        </div>
+        <div class="col-auto">
+            <script>
+                let x = 100;
+                document.write("Il valore di let x è: " + x + "<br>");
+                document.getElementById("primo valore").innerHTML = "Il valore di x è: " + x;
+                x = 70;
+                document.write("Il valore di let x è: " + x + "<br>");
+                document.getElementById("secondo valore").innerHTML = "Il valore di x è: " + x;
+            </script>
+        </div>
+        <div class="col-auto">
+            <p>
+                <h1>Esercizio 1.3</h1>
+                <h2>
+                    Creare un progetto Javascript che dichiari e
+                    contestualmente inizializzi una variabile x = 10; che
+                    dichiari la variabile y e successivamente assegni ad
+                    y il valore di x; che dichiari e contestualmente
+                    inizializzi la variabile z e gli assegna un nome di
+                    persona a proprio piacimento e tramite output
+                    stampa il valore delle variabili ed il tipo.
+                    Eseguire l’esercizio nelle due modalità : lato client e
+                    lato server.
+                </h2>
+            </p>
+            <p id="x"></p>
+            <p id="y"></p>
+            <p id="z"></p>
+            <script>
+                let x1 = 10;
+                let y;
+                y = x1;
+                let z = "Walter";
+                document.getElementById("x").innerHTML = "Il valore di x è: " + x1 + " ed è di tipo: " + typeof(x);
+                document.getElementById("y").innerHTML = "Il valore di y è: " + y + " ed è di tipo: " + typeof(y);
+                document.getElementById("z").innerHTML = "Il valore di z è: " + z + " ed è di tipo: " + typeof(z);
+                console.log("Valore di x: " + x1 + " (Tipo: " + typeof x + ")");
+                console.log("Valore di y: " + y + " (Tipo: " + typeof y + ")");
+                console.log("Valore di z: " + z + " (Tipo: " + typeof z + ")");
+            </script>
+    </div>
+    <div class="col-auto">
+        <p>
+            <h1>Esercizio 1.4</h1>
+            <h2>
+                Creare un progetto Javascript che dichiara una
+                variabile di tipo stringa con valore ‘50’, stampare
+                a video il valore ed il tipo. Verificare tramite una
+                funzione globale se il valore è di tipo numerico
+                oppure no e stampare a video l’esito (true o
+                false).
+                Successivamente convertire la stringa in un
+                numero e stampare a video il valore con il tipo
+                (che ora è cambiato).
+            </h2>
+        </p>
+        
+        <p id="output"></p>
+
+    <script>
+        // Dichiarazione della variabile di tipo stringa
+        let str = '50';
+
+        // Funzione globale per verificare se un valore è numerico
+        function isNumeric(value) {
+            return !isNaN(value) && typeof value === 'string' || typeof value === 'number';
+        }
+
+        // Stampiamo il valore iniziale e il tipo
+        let output = "Valore iniziale: " + str + " (Tipo: " + typeof str + ")<br>";
+
+        // Verifica se la variabile è numerica e stampiamo l'esito
+        let isStrNumeric = isNumeric(str);
+        output += "La variabile è numerica: " + isStrNumeric + "<br>";
+
+        // Convertiamo la stringa in un numero
+        let num = Number(str);
+
+        // Stampiamo il valore convertito e il nuovo tipo
+        output += "Valore convertito: " + num + " (Tipo: " + typeof num + ")";
+
+        // Visualizziamo tutto a video
+        document.getElementById("output").innerHTML = output;
+    </script>
+    </div>
+    <div class="col-auto">
+        <p>
+            <h1>Esercizio 1.5</h1>
+            <h2>
+                Creare un progetto Javascript che memorizza
+                all’interno di una variabile i giorni della settimana
+                separati dalla virgola e stampare a video tramite
+                console.log() il risultato. Scrivere il codice in modo
+                che, facendo la modifica ad un solo valore, i giorni
+                della settimana vengono visualizzati uno sotto
+                l’altro senza la virgola.
+            </h2>
+        </p>
+        
+        
+        <p id="g"></p>
+        <div class="col-auto">
+            <script>
+                mostraGiorni();
+                function mostraGiorni() {
+                    let giornii = [];
+                    giornii.push("Lunedì");
+                    giornii.push("Martedì");
+                    giornii.push("Mercoledì");
+                    giornii.push("Giovedì");
+                    giornii.push("Venerdì");
+                    giornii.push("Sabato");
+                    giornii.push("Domenica");
+                    document.getElementById("g").innerHTML = giornii.join(", ");
+                }
+                
+                let giorni =[];
+                giorni.push("Lunedì");
+                giorni.push("Martedì");
+                giorni.push("Mercoledì");
+                giorni.push("Giovedì");
+                giorni.push("Venerdì");
+                giorni.push("Sabato");
+                giorni.push("Domenica");
+                console.log(giorni.join(", "));
+
+                
+                console.log("Giorni separati da virgola:");
+                console.log(giorni);
+
+                
+                let giorniSeparati = giorni.split(", ");
+
+                
+                console.log("\nGiorni visualizzati uno sotto l'altro:");
+                giorniSeparati.forEach(function(giorno) {
+                    console.log(giorno);
+                });
+                                
+                let giorni1 = "Lunedì, Martedì, Mercoledì, Giovedì, Venerdì, Sabato, Domenica";
+
+                
+                console.log("Giorni separati da virgola:");
+                console.log(giorni);
+
+                
+                let giorniSeparati1 = giorni.split(", ");
+
+                
+                console.log("\nGiorni visualizzati uno sotto l'altro:");
+                giorniSeparati.forEach(function(giorno) {
+                    console.log(giorno);
+                });
+
+            </script>
+        </div>
+    
+
+    
+</body>
+</html>
