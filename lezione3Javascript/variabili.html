@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        test();
+        console.log(a); // undefined sposta solo la dichiarazione e no la valorizzazione
+        // HOISTING : SPOSTA LE DICHIARAZIONI DI VARIABILI E LE FUNZIONI ALL'INIZIO DEL SCOPE
+        // SCRIVO IL CODICE IN UNA SEQUENZA  
+        var x = 10;
+        var y = 20;
+        var z = x + y;
+        document.write("La somma di x e y è: " + z);
+        //fase 2 aggiornato
+        let a = 10;
+        let b ="ciao";
+        function test(){
+            console.log("ciao");
+        }
+        let test2 = () => {
+            console.log("ciao");
+        }
+        let frase1 = `${a} ${b} è bella`;
+
+    </script>
+</head>
+<body>
+    <h1>Le variabili</h1>
+    <h2> 1 non è obbligatorio dichiararle
+        <br>2 fine istruzione con punto e virgola
+        <br>  tipi esistono
+        <br> non posso dichiararli ( typeof(x)) ci pensa js ad assegnare il tipo
+        <br> tipizzazione debole 
+    </h2>
+
+    
+</body>
+</html>
