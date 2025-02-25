@@ -13,8 +13,8 @@
 </head>
 <body>
     <div class="row">
-        < class="col-auto">
-         <p><h1>
+        <div class="col-auto">
+         <h1>
             Esercizio 1.1 
             </h1><br>   
             <h2>
@@ -26,8 +26,8 @@
                 Ciao Mario, utilizzando la variabile definita e
                 l’operatore di concatenazione. Eseguire l’esercizio
                 nelle due modalità : lato client e lato server.
-        </p></h2>
-        <p ><h1 id="nome"></h1></p>
+        </h2>
+       <h1 id="nome"></h1>
                 <script>
                     let nome = "Walter";
                     console.log("ciao" + nome);
@@ -38,7 +38,7 @@
     </div>
     <div class="row">
         <div class="col-auto">
-            <p> <h1>
+            <h1>
                 Esercizio 1.2
                 </h1>
                 <h2>
@@ -52,7 +52,6 @@
                 valore. Lato server : eseguire l’esercizio sulla
                 console.
                 </h2>
-            </p>
         </div>
         <div class="col-auto">
            <p id="primo valore"></p>
@@ -132,7 +131,7 @@
         // Verifica se la variabile è numerica e stampiamo l'esito
         let isStrNumeric = isNumeric(str);
         output += "La variabile è numerica: " + isStrNumeric + "<br>";
-
+        console.log(x1 + parseInt(str));
         // Convertiamo la stringa in un numero
         let num = Number(str);
 
@@ -160,7 +159,15 @@
         
         <p id="g"></p>
         <div class="col-auto">
+            <p id="ok"></p>
             <script>
+                let ggg = 'Lunedi,Martedi,Mercoledi,Giovedi,Venerdi';
+                document.getElementById("ok").innerHTML = ggg.replaceAll(',', '<br>');
+
+                
+
+
+
                 mostraGiorni();
                 function mostraGiorni() {
                     let giornii = [];
@@ -215,7 +222,7 @@
             </script>
         </div>
     
-
-    
 </body>
+//prof
+//          console.log(x1 + parseInt(yy));
 </html>
