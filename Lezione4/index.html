@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="esercizio.js"></script>
+    
     
 </head>
 <body>
@@ -13,12 +13,6 @@
         5 numeri a proprio piacimento e restituisca in
         output la somma e la media.</p>
     <p><h1 id="media"></h1></p>
-    <script>
-        //cosole.log(somma());
-        //console.log(lista1());
-        console.log(lista2());
-        document.getElementById("media").innerHTML=lista2();
-    </script>
     <p>Esercizio 3.2
         Scrivere un programma che dichiara e valorizza
         una variabile con l'anno corrente e un’altra
@@ -29,10 +23,16 @@
         100
         Restituisca in output entrambi i risultati.</p>
         <p ><h1 id="anno"></h1></p>
-        <script>
-            console.log(differenzaAnno());
-            document.getElementById("anno").innerHTML=differenzaAnno();
-        </script>
+        <p>Esercizio 3.3
+            Scrivi un programma che dato un numero di
+            secondi, calcoli la quantità di ore, minuti e
+            secondi corrispondenti e poi stampi il risultato.
+            L'output avrà solo numeri interi.
+            Esempio:
+            Input: 12560
+            Output: 3 ore, 29 minuti e 20 secondi</p>
+            <h1 id="minuti"></h1>
+        
         <p>Esercizio 3.4
             Questo codice chiede all’utente di inserire due
             numeri, quindi ne mostra la somma. Funziona in
@@ -43,23 +43,15 @@
             var b = prompt("Inserisci il secondo numero"); // 2
             console.log(a + b); // 12</p>
             <p><h1 id="sommaU"></h1></p>
-            <script>
-                console.log(sommaU());
-                document.getElementById("sommaU").innerHTML=sommaU();
-            </script>
         <p>
             Esercizio 3.5
-Quale sarà il valore finale delle variabili a, b, c e
-d dopo l’esecuzione del codice sotto?
-let a = 1, b = 1;
-let c = ++a; // ?
-let d = b++; // ?
+            Quale sarà il valore finale delle variabili a, b, c e
+            d dopo l’esecuzione del codice sotto?
+            let a = 1, b = 1;
+            let c = ++a; // ? 
+            let d = b++; // ?
         </p>
         <p ><h1 id="finale"></h1></p>
-        <script>
-            console.log(finale());
-            document.getElementById("finale").innerHTML=finale();
-        </script>
         <p>
             Esercizio 3.6
 Quale sarà il risultato di a e x dopo l’esecuzione
@@ -68,10 +60,7 @@ let a = 2;
 let x = 1 + (a *= 2);
         </p>
         <p><h1 id="risultato"></h1></p>
-        <script>
-            console.log(risultato());
-            document.getElementById("risultato").innerHTML=risultato();
-        </script>
-
+       
+<script src="esercizio.js"></script>
 </body>
 </html>

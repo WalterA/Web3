@@ -36,13 +36,30 @@ let differenzaAnno = () => {
     let x = "La mia eta: "+ etaAttuale + " L'età per arrivare a 100: " + anniNeccessario;
     return x;
 }
+function convertiSecondi() {
+    let secondiTotali =12560;
+    // Calcolo delle ore, minuti e secondi
+    const ore = Math.floor(secondiTotali / 3600);
+    const resto = secondiTotali % 3600;
+    const minuti = Math.floor(resto / 60);
+    const secondi = resto % 60;
+
+    // Output del risultato
+    return (`${ore} ore, ${minuti} minuti e ${secondi} secondi`);
+}
+document.getElementById("minuti").innerHTML = convertiSecondi();
+
 let sommaU=()=> {
-    var a = Number(prompt("Inserisci il primo numero"));
-    var b = Number(prompt("Inserisci il secondo numero")); 
+    var a = Number(window.prompt("Inserisci il primo numero"));
+    var b = Number(window.prompt("Inserisci il secondo numero")); 
     let x = a+b;
     return  x;
     
 }
+
+
+// Esempio di utilizzo
+
 
 let finale=()=> {
     let a = 1, b = 1;
@@ -57,3 +74,17 @@ let risultato=()=> {
     let y = "La a : "+ a + " La x: "+x;
     return y;
 }
+document.getElementById("media").innerHTML=lista2();
+console.log(lista2());
+console.log(differenzaAnno());
+document.getElementById("anno").innerHTML=differenzaAnno();
+//console.log(sommaU());
+document.getElementById("sommaU").innerHTML=sommaU();
+console.log(finale());
+document.getElementById("finale").innerHTML=finale();
+console.log(risultato());
+document.getElementById("risultato").innerHTML=risultato();
+let box =document.createElement("h4");
+box.setAttribute("id","risultato1");
+document.body.appendChild(box);
+document.getElementById("risultato1").innerHTML= risultato();
