@@ -11,22 +11,24 @@ job().then((risultato)=>{
     console.log(errore);
 });
 
+
 let job3 = (data) => {
     let q = new Promise((resolve, reject) => {
         if (isNaN(data)) {
             reject("Errore: il valore non è un numero");
-            return;
         }
-        if (data % 2 === 0) {
+        else if (data % 2 != 0) {
             setTimeout(() => {
                 resolve(data);
                 console.log("Pari");
             }, 2000);
-        } else {
+        } else if (data % 2 == 0) {
             setTimeout(() => {
-                reject("Dispari");
+                resolve("Dispari");
                 console.log("Dispari");
-            }, 1000);
+            }, 2000);
+        }else{
+            rej("errore generito");
         }
     });
     return q;
@@ -111,4 +113,27 @@ let j =()=>{
         console.log(errore);
     });
 }
+const esecuzione = () => {
+    callback1()
+        .then((risultato) => {
+            console.log(risultato);
+            return callback2();
+        })
+        .then((y) => {
+            console.log(y);
+            return callback2();
+        })
+        .then((y) => {
+            console.log(y);
+            return callback2();
+        })
+        .then((y) => {
+            console.log(y);
+        })
+        .catch((errore) => {
+            console.error('Errore:', errore);
+        });
+};
+
+esecuzione();
 j();
