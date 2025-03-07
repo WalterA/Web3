@@ -1,4 +1,4 @@
-//Fetch api
+
 let utenti = fetch('https://jsonplaceholder.typicode.com/users');
 console.log(utenti);
 utenti.then((response)=> {
