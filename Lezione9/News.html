@@ -26,6 +26,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="News.html">News</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Album.html">Album</a>
+                    </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
@@ -39,9 +42,19 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-6 text-center">
+                
                 <div id="lista"></div>
                 <div id="dettagli"></div>
-                   
+                <div class="container mt-4">
+                    <label for="utenteSelect" class="form-label">Seleziona un utente:</label>
+                    <select id="utenteSelect" class="form-select mb-3">
+                        <option value="0" selected>Seleziona un utente...</option>
+                    </select>
+                    <button id="visualizzaBtn" class="btn btn-primary">Visualizza News</button>
+                </div>
+                
+                <!-- Contenitore per le news -->
+                <div id="newsContainer" class="mt-4"></div>
             </div>
         </div>
     </div>
