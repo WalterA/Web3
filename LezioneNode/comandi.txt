@@ -1,0 +1,9 @@
+npmjs.com
+npx create-react-app@latest nome PER CREARE IL PROGETTO
+npm start per avviarlo
+
+node module è un contenitore di librerie
+cdn è un contenitore di librerie che non richiede installazione ed è solo online
+mavern serve a gestire le dipendenze xml su node si chiama packege.json
+jsx è un'estensione di js che consente di scrivere codice html direttamente, gestisce il dom
+rafce comando per creare componente
