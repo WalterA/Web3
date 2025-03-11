@@ -7,7 +7,7 @@ const Esercizio1 = (props) => {
     }
     let lista2 = [];
     for (let i = 2; i < 16; i++) {
-        lista2.push(i)
+        lista2.push(i + " ")
     }
     let lista3 = [];
     let lista4 = [];
