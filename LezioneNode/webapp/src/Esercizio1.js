@@ -22,6 +22,7 @@ const Esercizio1 = (props) => {
                     <h1>{lista2}</h1>
                     <h1>{lista3}</h1> 
                     <h1>{lista4}</h1>
+                    
             
         </div>
     );

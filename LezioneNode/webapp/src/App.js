@@ -4,7 +4,11 @@ import Menu from './Menu';
 import Utenti from './Utenti';
 import Esercizio from './Esercizio';
 import Esercizio1 from './Esercizio1';
-let numero = parseInt(prompt("Inserisci un numero"), 10);
+import LezioneEventi from './LezioneEventi';
+import Hook2 from './Hook2';
+import Hook3 from './Hook3';
+import Esercizio4 from './Esercizio4';
+//let numero = parseInt(prompt("Inserisci un numero"), 10);
 const App=() =>{
   let persona={
     name: "Gigi",
@@ -22,9 +26,12 @@ const App=() =>{
       <Menu nome="Giacomo"/>
       <Menu {...persona}/>
       <Utenti ut={lista}/>
-      <Esercizio numero={numero}/>
+      {/*<Esercizio numero={numero}/>*/}
       <Esercizio1 nu={lista2} />
-      
+      <LezioneEventi/>
+      <Hook2/>
+      <Hook3/>
+      <Esercizio4/>
     </div>
   );
 }
