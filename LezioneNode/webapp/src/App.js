@@ -8,6 +8,8 @@ import LezioneEventi from './LezioneEventi';
 import Hook2 from './Hook2';
 import Hook3 from './Hook3';
 import Esercizio4 from './Esercizio4';
+import Esercizio5 from './Esercizio5';
+import Esercizio6 from './Esercizio6';
 //let numero = parseInt(prompt("Inserisci un numero"), 10);
 const App=() =>{
   let persona={
@@ -15,6 +17,7 @@ const App=() =>{
     age: 25,
     occupation: "Developer"
   };
+  
   
 
   let lista =[{name: "Gigi"},{name: "G"},{name: "fili"}]
@@ -30,8 +33,11 @@ const App=() =>{
       <Esercizio1 nu={lista2} />
       <LezioneEventi/>
       <Hook2/>
-      <Hook3/>*/}
-      <Esercizio4/>
+      <Hook3/>
+
+      <Esercizio4/>*/}
+      <Esercizio5/>
+      <Esercizio6/>
     </div>
   );
 }
