@@ -10,6 +10,8 @@ import Hook3 from './Hook3';
 import Esercizio4 from './Esercizio4';
 import Esercizio5 from './Esercizio5';
 import Esercizio6 from './Esercizio6';
+import Form from './Form';
+import Calcolatrice from './Calcolatrice';
 //let numero = parseInt(prompt("Inserisci un numero"), 10);
 const App=() =>{
   let persona={
@@ -35,9 +37,11 @@ const App=() =>{
       <Hook2/>
       <Hook3/>
 
-      <Esercizio4/>*/}
+      <Esercizio4/>
       <Esercizio5/>
-      <Esercizio6/>
+      <Esercizio6/>*/}
+      <Form/>
+      <Calcolatrice/>
     </div>
   );
 }
