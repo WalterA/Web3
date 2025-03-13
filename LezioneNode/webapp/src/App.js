@@ -22,15 +22,15 @@ const App=() =>{
   return (
     <div className="App">
       <h1>Componente Radice</h1>
-      <Menu nome="Mario" cognome="F"/>
+      {/*<Menu nome="Mario" cognome="F"/>
       <Menu nome="Giacomo"/>
       <Menu {...persona}/>
       <Utenti ut={lista}/>
-      {/*<Esercizio numero={numero}/>*/}
+      <Esercizio numero={numero}/>
       <Esercizio1 nu={lista2} />
       <LezioneEventi/>
       <Hook2/>
-      <Hook3/>
+      <Hook3/>*/}
       <Esercizio4/>
     </div>
   );

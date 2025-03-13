@@ -7,3 +7,4 @@ cdn è un contenitore di librerie che non richiede installazione ed è solo onli
 mavern serve a gestire le dipendenze xml su node si chiama packege.json
 jsx è un'estensione di js che consente di scrivere codice html direttamente, gestisce il dom
 rafce comando per creare componente
+npm i installazione di tutte le librerie
