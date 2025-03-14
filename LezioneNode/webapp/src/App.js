@@ -47,6 +47,7 @@ const App=() =>{
       <Cerca/>
       <Cuoricini/>*/}
       <Esercizio6/>
+      <Calcolatrice/>
       
     </div>
   );
