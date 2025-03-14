@@ -4,7 +4,8 @@ const Form = () => {
     let [contatotre,setconta]=useState(0);
     const [anno, setAnno] = useState('');
  
-    let calcola=()=>{
+    let calcola=(e)=>{
+      e.preventDefault();
         if (!isNaN(parseInt(anno))){
             let x = 2025 - parseInt(anno);
             setconta(x);
@@ -13,7 +14,7 @@ const Form = () => {
     }
   return (
     <div>Form
-        <form>
+        <form onSubmit={calcola}>
   <div className="mb-3">
     <label for="exampleInputEmail1" className="form-label">Nome</label>
     <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
