@@ -47,10 +47,11 @@ const App=() =>{
       <Calcolatrice/>
       <Cerca/>
       <Cuoricini/>
-      <Esercizio6/>
+      <Esercizio6/>*/}
       
-      <LoginForm/>*/}
-      <Calcolatrice/>
+      <LoginForm/>
+      <Esercizio6/>
+    
       
     </div>
   );
