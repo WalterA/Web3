@@ -47,11 +47,7 @@ const LoginForm = () => {
         console.log("utenteModifica");
         console.log(utenteModifica);
         console.log(nuovalista);
-        for(let i of utenti){
-            if (i.password !== utenteModifica.password && i.id === utenteModifica.id){
-               return utenti.password= utenteModifica.password;
-            }
-            console.log(utenti);
+        
         }
     }
 
