@@ -7,11 +7,11 @@ import Contatti from './Contatti';
 const Menu = () => {
   return (
     <BrowserRouter>
-      <nav>
-        <Link to="/Home">Home</Link> <span> | </span>
-        <Link to="/ChiSono">Chi sono</Link> <span> | </span>
-        <Link to="/Contatti">Contatti</Link> 
-      </nav>
+      <div>
+        <Link style={{ textDecoration: "none" }} to="/Home">Home</Link><span> | </span>
+        <Link style={{ textDecoration: "none" }} to="/ChiSono">Chi sono</Link> <span> | </span>
+        <Link style={{ textDecoration: "none" }} to="/Contatti">Contatti</Link> 
+      </div>
         <Routes>
             <Route path="/Home" element={<Home />} />
             <Route path="/ChiSono" element={<Chi />} />
