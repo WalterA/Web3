@@ -7,6 +7,10 @@ const Gestione = () => {
     let controlla = (e) => {
         e.preventDefault();
     }
+    {/*
+    await async fetch('http://localhost:3001/utenti', {
+    }*/ }
+
 
   return (
     <div>
