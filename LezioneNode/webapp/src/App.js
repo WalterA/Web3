@@ -15,6 +15,7 @@ import Calcolatrice from './Calcolatrice';
 import Cerca from './Cerca';
 import Cuoricini from './Cuoricini';
 import LoginForm from './LoginForm';
+import LoginNuovo from './LoginNuovo';
 //let numero = parseInt(prompt("Inserisci un numero"), 10);
 const App=() =>{
   let persona={
@@ -47,10 +48,11 @@ const App=() =>{
       <Calcolatrice/>
       <Cerca/>
       <Cuoricini/>
-      <Esercizio6/>*/}
+      <Esercizio6/>
       
       <LoginForm/>
-      <Esercizio6/>
+      <Esercizio6/>*/}
+      <LoginNuovo/>
     
       
     </div>

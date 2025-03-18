@@ -25,8 +25,7 @@ const LoginForm = () => {
             setesito("TUTTO OK");
         }else{
             setesito("LOGIN ERRATA");
-        }
-    }
+    }}
 
     let cambio = () => {
         setvisualizzaCambio(true);  
@@ -49,9 +48,9 @@ const LoginForm = () => {
         console.log(nuovalista);
         
         }
-    }
+    
 
-  return (
+return (
     <div>
         <h1>Esercizio4_9</h1>
             UserName <input type="text" id="user"/><br/>
@@ -65,6 +64,6 @@ const LoginForm = () => {
             </div> }
     </div>
   )
-}
+};
 
 export default LoginForm
