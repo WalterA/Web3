@@ -11,6 +11,7 @@ const Contatti = () => {
     e.preventDefault();
     console.log(nome);
     console.log(cognome);
+    /*
     if (!nome && !cognome) {
       setValidN(false);
       setValidC(false);
@@ -27,7 +28,29 @@ const Contatti = () => {
       setValidN(true);
       setValidC(true);
       alert("Campi completi");
-    }
+    }*/
+      switch (true) {
+        case (!nome && !cognome):
+          setValidN(false);
+          setValidC(false);
+          alert("Campi vuoti");
+          break;
+        case (!nome):
+          setValidN(false);
+          setValidC(true);
+          alert("Inserire nome");
+          break;
+        case (!cognome):
+          setValidN(true);
+          setValidC(false);
+          alert("Inserire cognome");
+          break;
+        default:
+          setValidN(true);
+          setValidC(true);
+          alert("Campi completi");
+      }
+      
     
     }
   return (
