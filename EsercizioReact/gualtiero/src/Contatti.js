@@ -2,16 +2,13 @@ import React, { useState } from 'react'
 
 const Contatti = () => {
 
-  let [nome, setNome]= useState();
-  let [cognome, setCognome]= useState();
+  let [nome, setNome]= useState('');
+  let [cognome, setCognome]= useState('');
   let [validN, setValidN]= useState(true);
   let [validC, setValidC]= useState(true);
   
   let control = (e) => {
     e.preventDefault();
-    console.log(nome);
-    console.log(cognome);
-    /*
     if (!nome && !cognome) {
       setValidN(false);
       setValidC(false);
@@ -28,7 +25,8 @@ const Contatti = () => {
       setValidN(true);
       setValidC(true);
       alert("Campi completi");
-    }*/
+    }
+     /*
       switch (true) {
         case (!nome && !cognome):
           setValidN(false);
@@ -50,7 +48,7 @@ const Contatti = () => {
           setValidC(true);
           alert("Campi completi");
       }
-      
+      */
     
     }
   return (
